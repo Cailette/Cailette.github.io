@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+:root {
+    --primary-color: #ba6e6e;
+    --secondary-color: #ffeeba;
+    --marginal-color: #6ca892;
+    --dark-bg-color: #cfcac8;
+    --light-bg-color: hsl(17, 7%, 98%);
+    --dark-color: #8c7f7b;
+    --light-color: #fdfcfb;
+    --gradient-color: linear-gradient(90deg, var(--secondary-color) -30%,  var(--primary-color) 65%); 
+}
+
+html {
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    background-image: var(--gradient-color);
+    height: 3rem;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.nav-item {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1.6rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--light-color);
+} 
+
+.nav-link:hover {
+    color: var(--secondary-color);
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.8);
+    transition: text-shadow ease 0.5s;
+}
+
+.flex-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    padding: 1.5rem 4rem;
+}
+
+.flex-section.footer {
+    height: 15%;
+}
+
+header .flex-section {
+    background-image:var(--gradient-color);
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+header .flex-section .flex-img img{
+    width: 150%;
+}
+
+.flex-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    word-break: break-word; 
+}
+
+.flex-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+}
+
+.left {
+    justify-content: left;
+    justify-items: left;
+    text-align: left;
+}
+
+.right {
+    justify-content: right;
+    justify-items: right;
+    text-align: right;
+}
+
+.header-h1 {
+    /* text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.8); */
+    color: var(--light-color);
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.header-h1 span{
+    font-family: "Caveat", sans-serif;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.5);
+    color: var(--light-color);
+    font-weight: 100;
+    font-size: 4rem;
+    line-height: 3rem;
+}
+
+.header-h2 {
+    font-family: "Caveat", sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.dark-bg {
+    background: var(--dark-bg-color);
+}
+
+.light-bg {
+    background: var(--light-bg-color);
+}
