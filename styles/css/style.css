@@ -25,6 +25,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--primary-color);
+    transition: color 0.4s;
+}
+
 p {
     margin: 0.5rem 0px;
 }
@@ -65,6 +70,7 @@ nav {
 }
 
 .flex-section {
+    position: relative;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -73,12 +79,15 @@ nav {
     padding: 1.5rem;
 }
 
-.flex-section.footer {
+footer .flex-section{
     min-height: 15%;
 }
 
+footer .flex-content{
+    width: 95%;
+}
+
 header .flex-section {
-    position: relative;
     background-image: var(--gradient-color);
     justify-content: center;
     align-content: center;
@@ -88,7 +97,7 @@ header .flex-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 65%;
     word-break: break-word; 
 }
 
@@ -119,8 +128,16 @@ header .flex-section {
     margin-right: 2rem;
 }
 
+.ml-1 {
+    margin-left: 1rem;
+}
+
 .text-right {
     text-align: right;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .a-links {
@@ -151,6 +168,7 @@ header .flex-section {
     font-family: "Caveat", sans-serif;
     font-weight: 200;
     font-size: 3rem;
+    margin-top: 1.5rem;
 }
 
 .header-3 {
@@ -196,27 +214,29 @@ header .flex-section {
     box-sizing: border-box;
 }
 
-.images-container {
+.row-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: space-between;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .img-container {
     position: relative;
-    width: 48%;
+    width: 45%;
 }
   
-.portfolio-image {
+.projects-image {
     width: 100%;
     opacity: 1;
     transition: .5s ease;
-    /* backface-visibility: hidden; */
+    backface-visibility: hidden;
 }
   
 .icon-container {
+    background-image: var(--gradient-color);
     position: absolute;
     display: flex;
     left:0px;
@@ -227,15 +247,11 @@ header .flex-section {
     opacity: 0;
 }
 
-.img-container:hover .portfolio-image {
-    opacity: 0.4;
-}
-
-.img-container:hover .icon-container {
-    opacity: 1;
+.icon-container:hover  {
+    opacity: 0.85;
 }
 
 .icon {
     margin: auto auto;
-    color: var(--dark-color);
+    color: var(--light-color);
 }
