@@ -1,28 +1,32 @@
 * {
     margin: 0;
     padding: 0;
+    color: var(--dark-color);
     font-family: "Poppins", serif;
 }
 
 :root {
     --primary-color: #ba6e6e;
     --secondary-color: #ffd89b;
-    --marginal-color: #6ca892;
-    --dark-bg-color: #cfcac8;
-    --light-bg-color: hsl(17, 7%, 98%);
-    --dark-color: #8c7f7b;
+    --dark-color: #413732;
     --light-color: #fdfcfb;
+    --dark-bg-color: #cec4c0;
+    --light-bg-color: hsl(17, 7%, 98%);
     --gradient-color: linear-gradient(90deg, var(--secondary-color) -10%,  var(--primary-color) 65%); 
-    --shadow-text: 2px 1px 10px rgba(0, 0, 0, 0.3), 4px 3px 5px rgba(0, 0, 0, 0.8);
-    --shadow-box: 3px 2px 25px rgba(0, 0, 0, 0.3), 5px 4px 15px rgba(0, 0, 0, 0.6);
+    --shadow-text: 2px 1px 6px rgba(65, 55, 50, 0.7), 4px 3px 3px rgba(65, 55, 50, 0.9);
+    --shadow-box: 3px 2px 20px rgba(65, 55, 50, 0.6), 5px 4px 15px rgba(65, 55, 50, 0.8);
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a {
     text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0px;
 }
 
 nav {
@@ -32,6 +36,7 @@ nav {
     background-image: var(--gradient-color);
     height: 3rem;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -40,11 +45,10 @@ nav {
     align-items: center;
     width: 100%;
     list-style: none;
-    box-sizing: border-box;
 }
 
 .nav-item {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
     padding: 1.6rem;
 }
@@ -57,7 +61,7 @@ nav {
 .nav-link:hover {
     color: var(--secondary-color);
     text-shadow: var(--shadow-text);
-    transition: text-shadow ease 0.5s;
+    transition: text-shadow ease 0.5s, color ease 0.5s;
 }
 
 .flex-section {
@@ -65,7 +69,7 @@ nav {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    min-height: 100%;
+    min-height: calc(100% - 3rem);
     padding: 1.5rem;
 }
 
@@ -74,6 +78,7 @@ nav {
 }
 
 header .flex-section {
+    position: relative;
     background-image: var(--gradient-color);
     justify-content: center;
     align-content: center;
@@ -83,7 +88,7 @@ header .flex-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 55%;
+    width: 60%;
     word-break: break-word; 
 }
 
@@ -94,7 +99,7 @@ header .flex-section {
     width: 35%;
 }
 
-#home img {
+.img-header {
     position: relative;
     left: 10%;
     width: 70%;
@@ -102,28 +107,29 @@ header .flex-section {
     box-shadow: var(--shadow-box);
 }
 
-#about img {
+.img-section {
     width: 100%;
 }
 
-#skills img {
-    width: 100%;
+.mr-1 {
+    margin-right: 1rem;
 }
 
-#portfolio img {
-    width: 100%;
+.mr-2 {
+    margin-right: 2rem;
 }
 
-.left {
-    justify-content: left;
-    justify-items: left;
-    text-align: left;
-}
-
-.right {
-    justify-content: right;
-    justify-items: right;
+.text-right {
     text-align: right;
+}
+
+.a-links {
+    color: var(--primary-color);
+}
+
+.a-links:hover {
+    color: var(--light-color);
+    transition: color ease 0.5s;
 }
 
 .header-1 {
@@ -148,8 +154,14 @@ header .flex-section {
 }
 
 .header-3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.botton-1 {
     align-self: flex-end;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 200;
     text-align: center;
     padding: 0.3rem 0.5rem;
@@ -159,10 +171,71 @@ header .flex-section {
     border-radius: 1.2rem;
 }
 
+.botton-1:hover {
+    font-weight: 400;
+    color: var(--dark-color);
+    background-color: var(--light-bg-color);
+    transition: background-color, font-weight, color ease-in-out 0.7s;
+}
+
 .dark-bg {
     background: var(--dark-bg-color);
 }
 
 .light-bg {
     background: var(--light-bg-color);
+}
+
+.links-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+}
+
+.img-container {
+    position: relative;
+    width: 48%;
+}
+  
+.portfolio-image {
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    /* backface-visibility: hidden; */
+}
+  
+.icon-container {
+    position: absolute;
+    display: flex;
+    left:0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.img-container:hover .portfolio-image {
+    opacity: 0.4;
+}
+
+.img-container:hover .icon-container {
+    opacity: 1;
+}
+
+.icon {
+    margin: auto auto;
+    color: var(--dark-color);
 }

@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Iwona Wojtaszek</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caveat:100,200,400,300,500,600,700&display=swap" rel="stylesheet">
 </head>
@@ -31,16 +32,21 @@
 
     <header id="home">
         <div class="flex-section">
-            <div class="flex-content">
-                <h1 class="header-1 right">
+            <div class="flex-content text-right">
+                <h1 class="header-1">
                     Hi, I am<br>
                     <span>Iwona Wojtaszek</span> <br>
                     Web developer
                 </h1> <br>
-                <a href="#" class="header-3 right">Check my CV</a>
+                <a href="#" class="botton-1">Check my CV</a>
             </div>
             <div class="flex-img" >
-                <img src="./styles/images/photo.jpg" alt="Welcome image">
+                <img src="./styles/images/photo.jpg" alt="Welcome image" class="img-header">
+            </div>
+            <div class="links-container">
+                <a href="#" target="_blank" class="mr-2 a-links fab fa-linkedin fa-2x"></a>
+                <a href="#" target="_blank" class="mr-2 a-links fab fa-github-square fa-2x"></a>
+                <a href="#" target="_blank" class="mr-1 a-links fab fa-facebook-square fa-2x"></a>
             </div>
         </div>
     </header>
@@ -49,12 +55,18 @@
         <section id="about">
             <div class="flex-section">
                 <div class="flex-img">
-                    <img src="./styles/images/img_about_me.svg" alt="??">
+                    <img src="./styles/images/img_about_me.svg" alt="??" class="img-section">
                 </div>
                 <div class="flex-content">
                     <h1 class="header-2">
                         About me
                     </h1>
+                    <p>
+                        <i class="mr-1 fas fa-user-circle"></i>Iwona Wojtaszek<br>
+                        <i class="mr-1 fas fa-heart"></i>Web developer <br>
+                        <i class="mr-1 fas fa-phone-alt"></i>(+48) 507 763 888 <br>
+                        <i class="mr-1 fas fa-envelope"></i>iwona.wojtaszek97@gmail.com
+                    </p>
                     <p>
                         I'm a third-year Computer Science student at Wroclaw University of Technology. I have started adventure with programming at the age of 14 with simple HTML page. Since then, programming has been a part of my life and even now, after all those years, writing each line of code releases a feeling of excitement and joy.
                     </p>
@@ -64,31 +76,72 @@
 
         <section id="skills">
             <div class="flex-section light-bg">
-                <div class="flex-content">
-                    <h1 class="header-2 right">
+                <div class="flex-content text-right">
+                    <h1 class="header-2">
                         Skills
                     </h1>
-                    <p class="right">
+                    <p>
                         Morbi finibus odio est, eu posuere orci molestie a. Vestibulum scelerisque lacus elit, sit amet ultricies arcu hendrerit id. Ut pharetra eros nunc, sit amet dignissim nisi pharetra eleifend. <br><br>Integer quis risus nunc. Cras ultrices nibh non velit placerat, eu laoreet est porttitor. Pellentesque condimentum, neque eu ultricies tempor, erat ligula sagittis risus, vel luctus ipsum sapien eget quam. Praesent gravida leo sed vestibulum pharetra. Aenean maximus dictum velit non finibus. Integer nunc dolor, bibendum at odio eu, mollis maximus urna. Ut metus tortor, tempus varius suscipit at, blandit sed orci. Maecenas elementum placerat libero, id volutpat lacus ultricies quis. <br><br>Vestibulum luctus condimentum ipsum, vitae cursus orci tempus posuere. Nulla pulvinar felis ac urna iaculis placerat. Fusce vulputate justo ipsum, nec porta lorem euismod vel.
                     </p>
                 </div>
                 <div class="flex-img">
-                    <img src="./styles/images/img_skills.svg" alt="??">
+                    <img src="./styles/images/img_skills.svg" alt="??" class="img-section">
                 </div>
             </div>
         </section>
 
         <section id="portfolio">
             <div class="flex-section">
-                <div class="flex-img">
-                    <img src="./styles/images/img_home.svg" alt="??">
-                </div>
+                <!-- <div class="flex-img">
+                    <img src="./styles/images/img_home.svg" alt="??" class="img-section">
+                </div> -->
                 <div class="flex-content">
                     <h1 class="header-2">
                         Portfolio
                     </h1>
+                    
+                    <h1 class="header-3">
+                        tSharing
+                    </h1>
+                    <div class="images-container">
+                        <div class="img-container">
+                            <a href="./styles/images/tSharing1.png" target="_blank"><img src="./styles/images/tSharing1.png" class="portfolio-image">
+                            <div class="icon-container">
+                                <span class="icon fas fa-external-link-alt fa-2x"></span>
+                            </div></a> 
+                        </div>
+                        <div class="img-container">
+                            <a href="./styles/images/tSharing2.png" target="_blank"><img src="./styles/images/tSharing2.png" class="portfolio-image">
+                            <div class="icon-container">
+                                <span class="icon fas fa-external-link-alt fa-2x"></span>
+                            </div></a> 
+                        </div>
+                    </div>
                     <p>
-                        Ut cursus consectetur urna in egestas. Vestibulum nec ante porta, vestibulum ante euismod, eleifend mi. Morbi finibus odio est, eu posuere orci molestie a. <br><br>Vestibulum scelerisque lacus elit, sit amet ultricies arcu hendrerit id. Ut pharetra eros nunc, sit amet dignissim nisi pharetra eleifend. <br><br>Integer quis risus nunc. <br><br>Cras ultrices nibh non velit placerat, eu laoreet est porttitor. Pellentesque condimentum, neque eu ultricies tempor, erat ligula sagittis risus, vel luctus ipsum sapien eget quam. Praesent gravida leo sed vestibulum pharetra. Aenean maximus dictum velit non finibus. Integer nunc dolor, bibendum at odio eu, mollis maximus urna. Ut metus tortor, tempus varius suscipit at, blandit sed orci. Maecenas elementum placerat libero, id volutpat lacus ultricies quis. Vestibulum luctus condimentum ipsum, vitae cursus orci tempus posuere. Nulla pulvinar felis ac urna iaculis placerat. Fusce vulputate justo ipsum, nec porta lorem euismod vel.
+                        A single-page application for assigning tasks, saving time and improving team work with roommates, used technologies:
+                        <strong>Node.js, Express.js, MySQL, EJS, Bootstrap</strong>  
+                    </p>
+
+                    <h1 class="header-3">
+                        BrindialFIT
+                    </h1>
+                    <div class="images-container">
+                        <div class="img-container">
+                            <a href="./styles/images/brinjalFIT1.png" target="_blank"><img src="./styles/images/brinjalFIT1.png" class="portfolio-image">
+                            <div class="icon-container">
+                                <span class="icon fas fa-external-link-alt fa-2x"></span>
+                            </div></a>
+                        </div>
+                        <div class="img-container">
+                            <a href="./styles/images/brinjalFIT2.png" target="_blank"><img src="./styles/images/brinjalFIT2.png" class="portfolio-image">
+                            <div class="icon-container">
+                                <span class="icon fas fa-external-link-alt fa-2x"></span>
+                            </div></a>
+                        </div>
+                    </div>
+                    <p>
+                        A team project that is a progressive web application for monitoring diet and training, used technologies:
+                        <strong>AngularJS, Bootsrap, Spring Boot, MySQL</strong>  
                     </p>
                 </div>
             </div>
