@@ -251,7 +251,7 @@
        id="path8048"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cczccc" />
-    <path
+    <path class="star2"
        style="opacity:1;fill:#ffeeba;fill-opacity:1;stroke:#ffeeba;stroke-width:1.28677213;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        inkscape:transform-center-x="0.21080603"
        inkscape:transform-center-y="-0.32812254"
@@ -259,7 +259,7 @@
        id="path9714-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="czczczczczc" />
-    <path
+    <path class="star1"
        style="opacity:1;fill:#ffeeba;fill-opacity:1;stroke:#ffeeba;stroke-width:1.01938677;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        inkscape:transform-center-x="-0.32904185"
        inkscape:transform-center-y="-0.054840298"
@@ -267,7 +267,7 @@
        id="path9714-7-3-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="czczczczczc" />
-    <path
+    <path class="star1"
        style="opacity:1;fill:#ffeeba;fill-opacity:1;stroke:#ffeeba;stroke-width:1.47657585;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        inkscape:transform-center-x="-0.040326438"
        inkscape:transform-center-y="-0.26684685"
@@ -275,7 +275,7 @@
        id="path9714-7-3-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="czczczczczcc" />
-    <path
+    <path class="star1"
        style="opacity:1;fill:#ffeeba;fill-opacity:1;stroke:#ffeeba;stroke-width:0.83625346;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        inkscape:transform-center-x="0.17406973"
        inkscape:transform-center-y="0.16522914"
@@ -283,7 +283,7 @@
        id="path9714-7-3-3-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="czczczczczc" />
-    <path
+    <path class="star2"
        style="opacity:1;fill:#ffeeba;fill-opacity:1;stroke:#ffeeba;stroke-width:0.58147836;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        inkscape:transform-center-x="-0.18996685"
        inkscape:transform-center-y="-0.19308931"
@@ -292,4 +292,23 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="czczczczczc" />
   </g>
+   <style>
+      @keyframes blink {
+         0%, 100% {
+                  opacity: 0;
+            }
+            50% {
+                  opacity: 1;
+            }
+         } 
+         
+      .star1 {
+         position: relative;
+         animation: blink 1.5s ease infinite;
+      }
+      .star2 {
+         position: relative;
+         animation: blink 2.5s ease infinite;
+      }
+   </style>
 </svg>
