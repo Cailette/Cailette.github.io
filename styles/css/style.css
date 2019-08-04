@@ -19,6 +19,7 @@
 
 html {
     font-size: 18px;
+    height: 100%;
 }
 
 a {
@@ -94,6 +95,7 @@ section:nth-of-type(2) {
 }
 
 header {
+    min-height: 100vh;
     background-image: var(--gradient-color);
 }
 
@@ -114,7 +116,7 @@ footer {
     text-align: right;
     padding-right: 2rem;
     background: var(--dark-bg-color);
-    min-height: 20%;
+    min-height: 20vh;
 }
 
 header span{
@@ -131,7 +133,7 @@ header span{
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    min-height: calc(100% - 3rem);
+    min-height: calc(100vh - 3rem);
     padding: 1.5rem;
 }
 
