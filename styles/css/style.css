@@ -8,7 +8,7 @@
 :root {
     --primary-color: #ba6e6e;
     --secondary-color: #ffd89b;
-    --dark-color: #413732;
+    --dark-color: hsl(20, 13%, 25%);
     --light-color: #fdfcfb;
     --dark-bg-color: #cec4c0;
     --light-bg-color: hsl(30, 6%, 95%);
@@ -139,7 +139,7 @@ header span{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 65%;
+    width: 60%;
     padding: 0 2rem;
     word-break: break-word; 
     box-sizing: border-box;
@@ -191,12 +191,12 @@ header span{
 .gallery-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     margin-bottom: 1rem;
 }
 
-.gallery-img-container {
+.gallery-container > div {
     position: relative;
     width: 45%;
 }
@@ -239,6 +239,10 @@ header span{
 
 .ml-1 {
     margin-left: 1rem;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .text-right {
@@ -306,7 +310,7 @@ header span{
         padding: 0;
     }
 
-    .gallery-img-container {
+    .gallery-container > div {
         margin-top: 1rem;
         width: 100%;
     }
