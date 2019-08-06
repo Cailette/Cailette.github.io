@@ -117,7 +117,7 @@ footer {
     min-height: 20vh;
 }
 
-header span{
+header span {
     font-family: "Just Another Hand", sans-serif;
     color: var(--light-color);
     text-shadow: var(--shadow-text);
@@ -265,6 +265,7 @@ header .image-container {
     html {
         font-size: 16px;
     }
+
     h1 {
         font-size: 3rem;
     }
@@ -275,6 +276,14 @@ header .image-container {
 }
 
 @media only screen and (max-width: 700px) {
+    header span {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
     nav ul {
         justify-content: space-around;
         align-items: center;
@@ -314,6 +323,7 @@ header .image-container {
     
     header .image-container{
         width: 70%;
+        height: auto;
     }
 
     .links-container {
