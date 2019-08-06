@@ -159,6 +159,10 @@ header .image-container {
     width: 30%;
 }
 
+#projects .content-container {
+    width: 70%;
+}
+
 .links-container a {
     color: var(--primary-color);
 }
@@ -262,7 +266,7 @@ header .image-container {
         font-size: 16px;
     }
     h1 {
-        font-size: 3srem;
+        font-size: 3rem;
     }
     
     h2 {
@@ -271,6 +275,16 @@ header .image-container {
 }
 
 @media only screen and (max-width: 700px) {
+    nav ul {
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    nav ul li {
+        padding: 0;
+    }
+
     .flex-section {
         flex-flow: column wrap;
         padding-top: 3rem;
@@ -284,14 +298,14 @@ header .image-container {
         align-self: center;
         width: 70%;
     }
-
-    header .content-container {
-        text-align: center;
-    }
     
     header {
         align-content: center;
         justify-content: center;
+    }
+
+    header .content-container {
+        text-align: center;
     }
     
     header .image-container{
@@ -309,15 +323,6 @@ header .image-container {
         margin-bottom: 1rem;
         align-self: center;
     }
-    nav ul {
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    
-    nav ul li {
-        padding: 0;
-    }
 
     .gallery-container > div {
         margin-top: 1rem;
@@ -334,7 +339,7 @@ header .image-container {
     }
 } 
     
-#about .image-container img {
+#img-about {
     position: relative;
     animation: moveHorizontally 2s ease infinite;
 }
