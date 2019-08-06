@@ -164,11 +164,11 @@ header .image-container {
 }
 
 .links-container a {
-    color: var(--primary-color);
+    color: var(--light-color);
 }
 
 .links-container a:hover {
-    color: var(--light-color);
+    color: var(--primary-color);
     transition: color ease 0.5s;
 }
 
@@ -192,7 +192,7 @@ header .image-container {
 
 .links-container {
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     align-items: center;
     position: absolute;
     left: 2rem;
@@ -317,6 +317,7 @@ header .image-container {
     }
 
     .links-container {
+        justify-content: center;
         margin: 1rem 0;
         position: relative;
         left: auto;
@@ -324,6 +325,7 @@ header .image-container {
     }
 
     .button-download {
+        width: 50%;
         margin-bottom: 1rem;
         align-self: center;
     }
