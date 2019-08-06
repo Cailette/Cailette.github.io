@@ -1,2 +1,2 @@
 # One Page Portfolio
-Portfolio created during CodersCamp
+Created during CodersCamp
