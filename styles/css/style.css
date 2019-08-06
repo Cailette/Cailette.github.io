@@ -294,6 +294,10 @@ header .image-container {
         width: 100%;
     }
     
+    #projects .content-container {
+        width: 100%;
+    }
+    
     .image-container {
         align-self: center;
         width: 70%;
