@@ -10,7 +10,7 @@
     --secondary-color: #ffd89b;
     --dark-color: hsl(20, 13%, 25%);
     --light-color: #fdfcfb;
-    --dark-bg-color: #cec1c0;
+    --dark-bg-color: #e2dad9;
     --light-bg-color: hsl(30, 6%, 95%);
     --gradient-color: linear-gradient(90deg, var(--secondary-color),  var(--primary-color) 65%); 
     --shadow-text: 2px 1px 6px rgba(65, 55, 50, 0.7), 4px 3px 3px rgba(65, 55, 50, 0.9);
