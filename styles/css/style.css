@@ -6,15 +6,15 @@
 }
 
 :root {
-    --primary-color: #ba6e6e;
+    --primary-color: #314777;
     --secondary-color: #ffd89b;
-    --dark-color: hsl(20, 13%, 25%);
-    --light-color: #fdfcfb;
-    --dark-bg-color: #e2dad9;
-    --light-bg-color: hsl(30, 6%, 95%);
-    --gradient-color: linear-gradient(90deg, var(--secondary-color),  var(--primary-color) 65%); 
-    --shadow-text: 2px 1px 6px rgba(65, 55, 50, 0.7), 4px 3px 3px rgba(65, 55, 50, 0.9);
-    --shadow-box: 3px 2px 20px rgba(65, 55, 50, 0.6), 5px 4px 15px rgba(65, 55, 50, 0.8);
+    --dark-color: hsl(221, 42%, 20%);
+    --light-color: #ffffff;
+    --dark-bg-color: #bdb4c6;
+    --light-bg-color: #f3f0f3;
+    --gradient-color: linear-gradient(to left, #314777, #666890, #948caa, #bdb4c6, #e3dee4);
+    --shadow-text: 2px 1px 6px hsl(221, 42%, 15%), 4px 3px 3px hsl(221, 42%, 20%);
+    --shadow-box: 3px 2px 20px hsl(221, 42%, 15%), 5px 4px 15px hsl(221, 42%, 20%);
 }
 
 html {
