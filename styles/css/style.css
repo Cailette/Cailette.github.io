@@ -14,7 +14,7 @@
     --light-bg-color: #f3f0f3;
     --gradient-color: linear-gradient(to left, #314777, #666890, #948caa, #bdb4c6, #e3dee4);
     --shadow-text: 2px 1px 6px hsl(221, 42%, 15%), 4px 3px 3px hsl(221, 42%, 20%);
-    --shadow-box: 3px 2px 20px hsl(221, 42%, 15%), 5px 4px 15px hsl(221, 42%, 20%);
+    --shadow-box: 3px 2px 18px hsl(221, 42%, 15%), 5px 4px 13px hsl(221, 42%, 20%);
 }
 
 html {
@@ -156,7 +156,7 @@ header .content-container {
 }
 
 header .image-container {
-    width: 30%;
+    width: 25%;
 }
 
 #projects .content-container {
@@ -261,6 +261,12 @@ header .image-container {
     text-align: right;
 }
 
+@media only screen and (max-width: 1400px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
 @media only screen and (max-width: 980px) {
     html {
         font-size: 16px;
@@ -272,6 +278,28 @@ header .image-container {
     
     h2 {
         font-size: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 870px) {
+    
+    header {
+        align-content: center;
+        justify-content: center;
+    }
+
+    header .content-container {
+        text-align: center;
+    }
+    header .image-container{
+        width: 50%;
+    }
+
+    .button-download {
+        width: 50%;
+        margin-bottom: 1rem;
+        align-self: center;
     }
 }
 
@@ -312,18 +340,10 @@ header .image-container {
         width: 70%;
     }
     
-    header {
-        align-content: center;
-        justify-content: center;
-    }
-
-    header .content-container {
-        text-align: center;
+    header .image-container{
+        width: 60%;
     }
     
-    header .image-container{
-        width: 70%;
-    }
 
     .links-container {
         justify-content: center;
@@ -331,12 +351,6 @@ header .image-container {
         position: relative;
         left: auto;
         bottom: auto;
-    }
-
-    .button-download {
-        width: 50%;
-        margin-bottom: 1rem;
-        align-self: center;
     }
 
     .gallery-container > div {
