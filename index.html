@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,400,300,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap" rel="stylesheet">
     <link rel="icon" href="./styles/images/icon.png" type="image/x-icon" />
-
+    <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -44,7 +44,7 @@
                 <a href="#" class="button-download">Check my CV</a>
             </div>
             <div class="image-container" >
-                <img src="./styles/images/photo1.jpg" alt="portrait">
+                <img src="./styles/images/img_home.svg" alt="portrait">
             </div>
             <div class="links-container">
                 <a href="https://github.com/Cailette" target="_blank" class="mr-2 fab fa-github-square fa-2x"></a>
@@ -144,7 +144,7 @@
                     </h1>
                     
                     <h3>
-                        tSharing
+                        <a href="https://github.com/Cailette/tSharing" target="_blank" class="link">tSharing <i class="fab fa-github-square"></i></a>
                     </h3>
                     <p>
                         A single-page application for assigning tasks, saving time and improving team work with roommates, used technologies:
@@ -152,16 +152,16 @@
                     </p>
                     <div class="gallery-container">
                         <div>
-                            <a href="./styles/images/tSharing1.png" target="_blank"><img src="./styles/images/tSharing1.png" class="gallery-img" alt="tSharing home page">
+                            <img src="./styles/images/tSharing1.png" class="gallery-img" alt="tSharing home page">
                             <div class="gallery-icon-container">
                                 <span class="gallery-icon fas fa-search fa-3x"></span>
-                            </div></a> 
+                            </div>
                         </div>
                         <div>
-                            <a href="./styles/images/tSharing2.png" target="_blank"><img src="./styles/images/tSharing2.png" class="gallery-img" alt="tSharing user panel">
+                            <img src="./styles/images/tSharing2.png" class="gallery-img" alt="tSharing user panel">
                             <div class="gallery-icon-container">
                                 <span class="gallery-icon fas fa-search fa-3x"></span>
-                            </div></a> 
+                            </div>
                         </div>
                     </div>
 
@@ -169,22 +169,26 @@
                         BrindialFIT
                     </h3>
                     <p>
-                        A team project that is a progressive web application for monitoring diet and training, used technologies:
+                        A university team project that is a progressive web application for monitoring diet and training, work in progress, used technologies:
                         <strong>AngularJS, Bootsrap, Spring Boot, MySQL</strong>  
                     </p>
                     <div class="gallery-container">
                         <div>
-                            <a href="./styles/images/brinjalFIT1.png" target="_blank"><img src="./styles/images/brinjalFIT1.png" class="gallery-img" alt="BrindialFIT home page">
+                            <img src="./styles/images/brinjalFIT1.png" class="gallery-img" alt="BrindialFIT home page">
                             <div class="gallery-icon-container">
                                 <span class="gallery-icon fas fa-search fa-3x"></span>
-                            </div></a>
+                            </div>
                         </div>
                         <div>
-                            <a href="./styles/images/brinjalFIT2.png" target="_blank"><img src="./styles/images/brinjalFIT2.png" class="gallery-img" alt="BrindialFIT user panel">
+                            <img src="./styles/images/brinjalFIT2.png" class="gallery-img" alt="BrindialFIT user panel">
                             <div class="gallery-icon-container">
                                 <span class="gallery-icon fas fa-search fa-3x"></span>
-                            </div></a>
+                            </div>
                         </div>
+                    </div>
+
+                    <div id="galleryModal" class="modal">
+                        <img class="modal-content" id="modalImg">
                     </div>
                 </div>
             </div>
@@ -204,5 +208,7 @@
             iwona.wojtaszek97@gmail.com<i class="ml-1 fas fa-envelope"></i>
         </p>
     </footer>
+
+    <script type="text/javascript"  src="./styles/js/modalScript.js"></script>
 </body>
 </html>
